@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>login_page</title>
+    <link href="C:/Users/dell/Downloads/Image/login.jpg" rel="icon">
+    <style>
+        div{
+            text-align: center;
+            margin: 100px;
+            padding: 12px ;
+            border-radius: 10000000px;
+            border-width: 6px;
+            border-top: solid orange 5px;
+            border-bottom: solid green 5px;
+            box-shadow: 15px 15px 15px rgb(101, 199, 101);
+        }
+        input{
+            box-shadow: 5px 5px 5px blue;
+            color: blue;
+        }
+    </style>
+<script>
+     function validation()
+        {
+            document.writeln("HIiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii");
+            var name1 =document.getElementById(name);
+            if(name1=="" && name1==null && name1==" ")
+            {
+                alert("User Name should not be empty");
+                return true;
+            }
+            var password1=document.getElementById(password1);
+            var cpassword1=document.getElementById(pass2);           
+            if(password1=="" && password1==null && password1==" ")
+            {
+                alert("Password should not be empty");
+                return true;
+            }
+            else if(password1.length<8)
+            {
+                alert("Password must contain minimum 3 characters");
+                return true;
+            }
+            else if(password1!==cpassword1)
+            {
+                alert("Password and Confirmation Password not matched");
+                return false;
+            }
+        }
+</script>
+</head>
+<body>
+       <div>
+    <img src="C:/Users/dell/Downloads/Image/login.jpg" width="150px" height="150px">
+
+    <form name="registration" action="E:\UI-PRACTICE\Html\javascriptconcepts.html" method="POST">
+        User Name <input type="text" name="name" id="name" pattern="[a-zA-Z ]{1,}" title="Name must be Alphabets only"/><br><br>
+        Password <input type="password" name="password" id="password1"/><br><br>
+        Conform Password <input type="text" name="password" id="password2"/><br><br>
+        <input type="submit" value="log-in" onclick="validation()"/>
+    </form>
+</div>
+</body>
+</html>

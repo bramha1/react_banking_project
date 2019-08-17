@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  position: relative;
+  -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
+  -webkit-animation-duration: 4s; /* Safari 4.0 - 8.0 */
+  -webkit-animation-iteration-count: infinite; /* Safari 4.0 - 8.0 */
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+  margin: 5px;
+}
+#a{
+  width:100px;
+  height: 100px;
+  background-color:green;
+  position:absolute;
+  -webkit-animation-name:css;
+  -webkit-animation-duration:5s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: css;
+  animation-duration:5s;
+  animation-iteration-count:infinite;
+  margin: 10px;
+  }
+  #b{
+   width:100px;
+  height: 100px;
+  background-color:green;
+  position:absolute;
+  -webkit-animation-name:css3;
+  -webkit-animation-duration:8s;
+  -webkit-animation-iteration-count:infinite;
+  animation-name: css3;
+  animation-duration:8s;
+  animation-iteration-count:infinite;
+  }
+  
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes example {
+  0%   {background-color:red;color: rgb(20, 36, 184); left:0px; top:0px;}
+  25%  {background-color:yellow;color: rgb(209, 0, 139); left:600px; top:0px;}
+  50%  {background-color:blue;color: rgb(230, 19, 19); left:600px; top:400px;}
+  75%  {background-color:green;color: rgb(209, 0, 192); left:0px; top:400px;}
+  100% {background-color:red;color: rgb(35, 209, 0); left:0px; top:0px;}
+}
+
+@-webkit-keyframes css {
+  0%   {background-color:blue;color: rgb(38, 12, 134); left:0px; top:200px;}
+  25%  {background-color:gray;color: rgb(173, 21, 211); left:300px; top:0px;}
+  50%  {background-color:pink; color: rgb(20, 209, 121);left:300px; top:400px;}
+  75%  {background-color:orange; color: rgb(137, 23, 212);left:0px; top:400px;}
+  100% {background-color:lightblue; color: rgb(199, 211, 26);left:0px; top:0px;}
+}
+@-webkit-keyframes css3 {
+  0%   {background-color:lightgreen;color: darkturquoise; left:0px; top:0px;}
+  25%  {background-color:rgb(41, 241, 14); color: rgb(166, 209, 10);left:500px; top:0px;}
+  35%  {background-color:brown; color: rgb(209, 0, 98);left:800px; color: rgb(15, 19, 248); top:20px;}
+  50%  {background-color:darkgoldenrod; color: rgb(209, 0, 52);left:500px; top:500px;}
+  75%  {background-color:aqua;   color: rgb(248, 204, 10);left:0px; top:500px; }
+  92%  {background-color:rgb(207, 21, 224); color: rgb(7, 209, 0);left:0px; top:300px;}
+  100% {background-color:gold;   color: rgb(209, 0, 209); left:0px; top:0px;}
+}
+</style>
+</head>
+<body>
+
+<p style="text-align: center"> This example does not work in Internet Explorer 9 and earlier versions.</p>
+
+<div style="text-align: center">css3<br>
+    css3<br>WELCOME<br>
+    
+    css3<br>
+</div>
+<div id="a">css3<br>
+    css3<br>WELCOME<br>
+    css3<br></div>
+<div id="b">css3<br>
+    css3<br>WELCOME<br>
+    css3<br></div>
+
+</body>
+</html>

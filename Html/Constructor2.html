@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+        class VarunSimhaCompany
+        {
+            constructor() 
+            {
+                this.company = "SP VARUN SIMHAA";
+            }
+        }
+        
+        //...........................................//
+
+        class Employees extends VarunSimhaCompany 
+        {
+            constructor(id, name) 
+            {
+                super();
+                this.id = id;
+                this.name = name;
+            }
+        }
+
+        var emp = new Employees(1, "VIJAY");
+
+        document.writeln(emp.id + " " + emp.name + " " + emp.company);
+    </script>
+</body>
+</html>

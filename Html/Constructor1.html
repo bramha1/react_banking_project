@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+
+    <script>
+
+        class Test 
+        {
+            static display() 
+            {
+                return "static method is invoked";
+            }
+        }
+        document.writeln(Test.display() + "<br><br><br><br>");
+
+
+        class Test1 
+        {
+                static display1() 
+                {
+                    return "static method is invoked";
+                }
+                static display2() 
+                {
+                    return "static method is invoked again";
+                }
+            }
+        document.writeln(Test1.display1() + "<br><br>");
+        document.writeln(Test1.display2());
+
+    </script>
+
+</body>
+</html>

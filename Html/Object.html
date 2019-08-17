@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<body>
+    <script>
+        function Employee(firstName, lastName)
+        {
+            this.firstName = firstName;
+            this.lastName = lastName;
+        }
+
+        Employee.prototype.company = "SOFTWARE COMPANY";
+
+        var employee1 = new Employee("Tech", "mahindra");
+        var employee2 = new Employee('H', 'P');
+        var employee3 = new Employee("sp", "varunsimha");
+        var employee4 = new Employee("info", "sys");
+
+        document.writeln(employee1.firstName + " " + employee1.lastName + " " + employee1.company + "<br><br><br>");
+        document.writeln(employee2.firstName + " " + employee2.lastName + " " + employee2.company + "<br><br><br>");
+        document.writeln(employee3.firstName + " " + employee3.lastName + " " + employee3.company + "<br><br><br>");
+        document.writeln(employee4.firstName + " " + employee4.lastName + " " + employee4.company + "<br><br><br>");
+
+
+    </script>
+
+</body>
+
+</html>

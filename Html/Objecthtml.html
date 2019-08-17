@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Objects</title>
+    <link href="C:/Users/dell/Downloads/Image/objects_icon1.jpg" rel="icon" width="120px">
+    <style>
+        body{
+            background-color: blanchedalmond;
+        }
+        div{
+            text-align: center;
+            background-color: white;
+            color: blue;
+            border-radius:  500000000px ;
+            border-top: solid orangered 13px ; 
+            border-bottom: solid rgb(8, 129, 8) 13px;
+            box-shadow: 10px 10px 10px 10px  rgb(35, 211, 35)  ;
+            margin-top:5px;
+            text-shadow:5px 5px 5px  rgb(139, 139, 190);
+            padding: 5px;
+            
+            
+                }
+                #m{
+                     position: absolute; top: 40%; left: 10%;
+                     
+                }
+                #n{
+                    position: absolute; top: 40%; right: 10%;
+                }
+                
+        h1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div>
+            <img src="C:/Users/dell/Downloads/Image/objects_icon1.jpg" width="50px" height="30px">
+    <h1><u>Objects</u></h1>
+    <script>
+        document.write("<h3><u>Object Litteral (MCA College)</u></h3>");
+         s = {id:"14A11F003",name:"Bramha",College:"NIE",Course:"MCA",place:"Macherla"}
+         document.write(s.College+"<br>"+s.id+"<br>"+s.name+"<br>"+s.Course+"<br>"+s.place);
+         document.write("<br>");
+         document.write("<h3><u>Degree College</u></h3>");
+         </script>
+         <img src="C:/Users/dell/Downloads/Image/ashoka chakram.png" width="50px"  height="50px">
+         <br>
+         <script>
+         var cc = new Object();
+         cc.id=1204698;
+         cc.name="Bramha";
+         cc.course = "B.SC(Computers)";
+         cc.College="Govt.Degree College";
+         cc.place="Anatapur";
+         document.write(cc.College+"<br>"+cc.id+"<br>"+cc.name+"<br>"+cc.course+"<br>"+cc.place);
+         document.write("<br>");
+         document.write("<h3><u>Intermediate College</u></h3>");
+         function Inter(college,id,name,course,place)
+         {
+             this.college=college;
+             this.id=id;
+             this.name=name;
+             this.course=course;
+             this.place=place;
+         }
+         i= new Inter("S.L.N Junior College","11011318","Bramha","M.P.C","Anantapur");
+         document.write(i.college+"<br>"+i.id+"<br>"+i.name+"<br>"+i.course+"<br>"+i.place);
+    </script>
+    <br>
+   <a href="E:\UI-PRACTICE\Html\Variables.html" ><img src="C:/Users/dell/Downloads/Image/variables.png"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\functions.html" ><img src="C:/Users/dell/Downloads/Image/function1.png"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\Operators.html" ><img src="C:/Users/dell/Downloads/Image/caluculator.jpg"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\control.html" ><img src="C:/Users/dell/Downloads/Image/control.jpg"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\Loops.html" ><img src="C:/Users/dell/Downloads/Image/loops.png"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\Array.html" ><img src="C:/Users/dell/Downloads/Image/Arrays.png"  width="80px" height="90px"></a>
+    <a href="E:\UI-PRACTICE\Html\strings.html" ><img src="C:/Users/dell/Downloads/Image/string.png"  width="80px" height="90px"></a>
+    </div>
+    <img id="m" src="C:/Users/dell/Downloads/Image/Mahathmagandi.jpeg" width="250px">
+    <img id="n" src="C:/Users/dell/Downloads/Image/Mahathmagandi.jpeg" width="250px">
+    
+</body>
+</html>

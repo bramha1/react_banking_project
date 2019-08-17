@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        class A //super class or parent class 
+        {
+            display() 
+            {
+                document.writeln("A is invoked<br><br><br>");
+            }
+            display(name) 
+            {
+
+                document.writeln("A is invoked<br><br><br>"+name);
+            }
+            display(id) 
+            {
+
+                document.writeln("A is invoked<br><br><br>" + id);
+            }
+        }
+
+
+
+        class B extends A // B child class
+        {
+             display() 
+             {
+                document.writeln("B is invoked<br><br><br>");
+            }
+           
+        }
+
+         var b = new B();
+          b.display();
+
+      var a = new A();
+       a.display();
+
+    </script>
+
+</body>
+
+</html>

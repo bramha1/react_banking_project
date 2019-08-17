@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        //Declaring class
+        class Employee 
+        {
+            //Initializing an object
+            constructor(id, name) 
+            {
+                this.id = id;
+                this.name = name;
+            }
+            detail() 
+            {
+                document.writeln(this.id +"    "+ this.name + "<br>")
+            }
+        }
+        //passing object to a variable 
+        var e1 = new Employee(101,  "SP VARUN SIMHA");
+        var e2 = new Employee(102,  "SP VIJAY KUMAR");
+
+        e1.detail(); //calling method
+        e2.detail(); //calling method
+
+
+        //Re-declaring class
+        class Employee 
+        {
+  
+  
+        }
+
+
+    </script>
+
+</body>
+
+</html>

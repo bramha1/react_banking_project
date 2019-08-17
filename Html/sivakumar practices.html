@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascript</title>
+    <style>
+        body{
+            text-align: center;
+            color: blue;
+        }
+        #s{
+            color: chocolate;
+            border: solid green 2px;
+            border-radius: 100000px;
+            background-color: aqua;
+        }
+    </style>   
+</head>
+<body>
+   <h1 id="s"><u>Variables</u></h1>
+        <script>
+                //Varibles
+                 var a = 20;
+                 var b = 30;
+                 var c = a+b;//adding
+                 document.write(c +"<br><br>");
+        
+                 var d = 55;// Variables define
+                 var e = d-b;//subtrction
+                 document.write(e +"<br><br>");
+            
+                 var f = 60;
+                 var g = f*a;//multiplication
+                 document.write(g +"<br><br>");
+
+                 var h =100;
+                 var i = h/g;//division
+                 document.write(i +"<br><br>");
+
+                 var j = 325;
+                 var k = a%j;
+                 document.write(k +"<br>");
+                 document.write("<h1><u>Data Types</u></h1>");
+                 
+                  var s = 20;//number data type
+                  var v = "Siva";//String datatype
+                  var q = 's';//character datatype
+                  var r = "false";//boolean
+
+                  document.write(s +"<br>");
+                  document.write(v +"<br>");
+                  document.write(q +"<br>");
+                  document.write(r +"<br>");
+                
+                 var ss = "mnbb";
+                 var is = "mnbb";
+                 var vs = "mnbb";
+                 var as = "mnbb";
+                 function siva()//non parameterized function or function declaration
+                  {
+                      var ks = "Siva";
+                      document.write(ks +"<br><br>");
+                  }
+                     siva();
+
+                     function cube(number)
+                     {
+                         number=number*number*number;
+                         document.write(number);
+                     }
+                     
+            </script>
+            <input type="button" value="5^3" onclick="return cube(5)">
+</body>
+</html>

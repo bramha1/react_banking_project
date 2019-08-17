@@ -1,0 +1,212 @@
+<html>
+    <head>
+        <style>
+            body{
+                text-align: center;
+                color: rgb(23, 102, 98);
+                background-color: rgb(141, 192, 141);
+            }
+            h1{
+                color: blue;
+               
+            }
+            img{
+                float: left;
+            }
+
+        </style>
+        <link href="C:/Users/dell/Downloads/Image/Mahathmagandi.jpeg" rel="icon" type="img/ico">
+    </head>
+<body>
+    <div>
+        <img src="C:/Users/dell/Downloads/Image/Mahathmagandi.jpeg" alt="gandhi" width="48px">
+       
+    <p><h1><u>Object</u></h1></p> 
+    ===========================
+</div>
+<script>
+    //Object litteral
+emp={id:1411003,name:"Brmha",village:"KNK"};
+document.write(emp.id+"<br>"+emp.name+"<br>"+emp.village);
+</script>
+<br>
+<br>
+<script>
+    //New operator with default constructor 
+    var b = new Object();
+    b.id=123;
+    b.name="bramha";
+    b.village="KNK";
+    b.city="ATP";
+    b.state="AP";
+    b.country="INDIA"
+ document.write(b.id+"<br>"+b.name+"<br>"+b.village+"<br>"+b.city+"<br>"+b.state+"<br>"+b.country+"<br><br>");
+
+
+    var e = new Object()
+    e.id=123;
+    e.name="Bramha";
+    e.city="Bangalore"
+    
+    document.write(e.id+"<br>"+e.name+"<br>"+e.city);
+
+</script>
+
+<br>
+<br>
+<script>
+    //New operator with parametrizied constructor
+    function emp(id,name,city)
+    {
+        this.id=id;
+        this.name=name;
+        this.city=city;
+    }
+    c = new emp(1003,"Bramha","Bangalore");
+    document.write(c.id+"<br>"+c.name+"<br>"+c.city);
+</script>
+<br>
+<br>
+<p><h1><u>Strings</u></h1></p> 
+===========================<br><br>
+<script>
+    // String litteral
+    var str="JAVASCRIPT";
+    document.write(str +"<br><br>");
+
+    //New operator with string default constructor
+    var s1 = "javascript  toUpperCase Example" 
+    var s2 = s1.toUpperCase();
+    document.write(s2  +"<br><br>");
+
+     //New operator with string default constructor
+    var s1 = "JAVASCRIPT HTML5 CSS3 JQUERY AJAX";
+    var s2 = s1.toLowerCase();
+    document.write(s2 +"<br><br>");
+
+     //New operator with string default constructor
+    var s1 = "Hi, Hello Welcome To The Javatpoint";
+    var s2 = s1.toLowerCase();
+    document.write(s2 +"<br><br>");
+
+     //New Operator with string default constructor
+    var str1 = "Hi, Hello Welcome To The Javatpoint ";
+    document.write(str1 +"<br><br>");
+
+    //New Operator with string parameterized constructor
+    var Stringname = new String("hi");
+    document.writeln(Stringname);
+
+    var str1 = new String("java script string");
+    document.write(str1);
+</script>
+<div><p><h1><u>Array</u></h1></p> 
+===========================<br><br>
+<script>
+       //Array litteral
+       var MyArray = ["HTML","CSS","JAVASCRIPT","JS","JQ"];
+       document.write("Number of elements in an arrays is :" +MyArray.length +"<br>");
+       
+       var MyArray12 = ["hhsdgh","vhhjsgdh","hfhfsghjf","bndvbnvfh","bbfvdhjmhhf","bvddhdfjd","vfdhgjhf","hjvdhfh","vvghjgj"];
+       document.write("Number of elements in an arrays is:" +MyArray12.length +"<br><br>") ;
+
+       //New operator with Array default constructor
+       var MyArray1 = new Array();
+          MyArray1[0] ="HTML";
+          MyArray1[1] ="CSS";
+          MyArray1[2] ="JAVASCRIPT";
+          MyArray1[3] ="AJAX";
+          MyArray1[4] ="JQ";
+          MyArray1[5] ="REACT JS";
+          MyArray1[6] ="ANGULAR";
+
+          document.write("Number of elements in an Arrays is:" +MyArray1.length +"<br><br>");
+       //New operator with parameterized constructor
+       var MyArray2 = new Array ("bhhgfhh","bhvhgfhghj","hjvfdghjghj","hjgvhjdfh");
+       document.write("Number of elements in an Arrays is :" +MyArray2.length +"<br><br>");
+       
+       
+        //New operator with parameterized constructor
+
+       var MyArray20 = new Array ("bhhgfhh","bhvhgfhghj","hjvfdghjghj","hjgvhjdfh","hsdhghjsjhg","cffchjsva","chgfaghfhgas","hgfssfhaga");
+       document.write("Number of elements in an Arrays is :" +MyArray20.length +"<br><br>");
+    </script>
+       
+</body> 
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+            function MyArrayLen()
+            {
+                var MyArray=["html","css","javascript","ajax","boostrap","html5","css3","json"];
+                var x = document.getElementById("len");
+                x.innerHTML = MyArray.length;
+            }
+     </script>
+     </head>
+<body>
+                <p id="len" style="color: blue;font-family:tahoma">Click button to display length of array...!!!</p>
+                <button onclick= "MyArrayLen()">Click_Len</button>
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        function Array()
+        {
+            var Array = ["bramha","raghava","sudha","radha","uday","syam","sunil","bittu",];
+            var b = document.getElementById("len1");
+            b.innerHTML = Array.length;
+        }
+    </script>
+</head>
+<body>
+    <p id="len" style="color: chocolate">Click button to display length of array...!!!</p>
+    <button onclick="Arraylen1()">Click_Len1</button>
+</body>
+</html>
+<br>
+<br>
+<br>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>//Array Litteral
+        var wep=["ghfagh","bgdahg","gcsgdhfjy"];
+        for(i=0;i<wep.length;i++)
+        {
+            document.write(wep[i] +"<br><br>");
+        }
+
+        var www=[235331345,2442,555,455645,56];
+        for(i=0;i<www.length;i++)
+        {
+            document.write(www[i] +"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<br>
+<br>
+

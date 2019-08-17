@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    body{
+        text-align: center;
+        color: blue;
+        font-family: serif;
+    }
+    </style>
+</head>
+<body>
+    <div >
+    <h1><u>Date & Time</u></h1>
+    <h1>it is now :
+    <script>
+       var CurrentTime = new Date();
+       var time = CurrentTime.getTime()
+       var month = CurrentTime.getMonth()+1
+       var day = CurrentTime.getDate()
+       var year = CurrentTime.getFullYear()    
+       var hh = CurrentTime.getHours()
+       var mm = CurrentTime.getMinutes()
+       var ss = CurrentTime.getSeconds()
+
+       document.write(month+"/"+day+"/"+year+" "+hh+":"+mm+":"+ss);
+    </script>
+    </h1>
+</div>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        //Declaring class
+        var emp = class 
+        {
+            //Initializing an object
+            constructor(id, name) 
+            {
+                this.id = id;
+                this.name = name;
+            }
+
+            //Declaring method    
+            detail()
+            {
+                document.writeln(this.id +"     "+ this.name + "<br><br>")
+            }
+        }
+        //passing object to a variable 
+        var e1 = new emp(103, "VARUN");
+        var e2 = new emp(103, "VARUN");
+        
+
+        e1.detail(); //calling method
+        e2.detail(); //calling method
+
+        //Re-declaring class
+        var emp = class 
+        {
+            //Initializing an object
+            constructor(id, name)
+             {
+                this.id = id;
+                this.name = name;
+            }
+            detail()
+             {
+                document.writeln(this.id +"     "+ this.name + "<br>")
+            }
+        }
+        //passing object to a variable 
+        var e1 = new emp(103, "VARUN");
+        var e2 = new emp(103, "VARUN");
+
+        e1.detail(); //calling method
+        e2.detail(); //calling method
+    </script>
+
+</body>
+
+</html>

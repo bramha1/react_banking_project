@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        //Declaring class
+        class Employee 
+        {
+            //Initializing an object
+            constructor(id, name,salary,phone,village,state) 
+            {
+                this.id = id;
+                this.name = name;
+                this.salary = salary;
+                this.phone = phone;
+                this.village = village;
+                this.state = state;
+
+            }
+            //Declaring method
+            employeDetails() 
+            {
+                document.writeln(this.id + "    " + this.name + "    " + this.salary + "    " + this.phone+ "    " + this.village + "    " + this.state + "<br><br>");
+            }
+        }
+
+        //passing object to a variable 
+        var e1 = new Employee(101, "SP VARUN SIMHA",120000,7411789300,"CTP","AP");
+        var e2 = new Employee(102, "SP VIJY KUMAR",800000, 9959508019, "CTP", "AP");
+        var e3 = new Employee(103, "SP VARUN SIMHA", 120000, 7411789300, "CTP", "AP");
+        var e4 = new Employee(104, "SP VIJY KUMAR", 800000, 9959508019, "CTP", "AP");
+        var e5 = new Employee(105, "SP VARUN SIMHA", 120000, 7411789300, "CTP", "AP");
+        var e6 = new Employee(106, "SP VIJY KUMAR", 800000, 9959508019, "CTP", "AP");
+
+        e1.employeDetails(); //calling method
+        
+        
+        
+        e2.employeDetails(); //calling method
+        
+        e3.employeDetails(); //calling method
+        e4.employeDetails(); //calling method
+        e5.employeDetails(); //calling method
+        e6.employeDetails(); //calling method
+        
+    </script>
+</body>
+
+</html>

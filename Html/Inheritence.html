@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+    <html>
+
+    <body>
+
+        <script>
+            class A 
+            {
+                display() 
+                {
+                    document.writeln("A is invoked");
+                }
+            }
+            class B extends A
+            {
+                display() 
+                {
+                    document.writeln("B is invoked");
+                }   
+            }
+            class C extends B 
+            {
+                    display() 
+                    {
+                        document.writeln("B is invoked");
+                    }
+                }
+            var b = new B();
+            b.display();
+        </script>
+
+    </body>
+
+    </html>
